@@ -27,6 +27,62 @@
             <kind>1</kind>
             <string>image_index=0;
 image_speed=0;
+depth=10;
+alpha=1;
+cero=0;
+boleano=false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if boleano=true
+{
+cero++;
+    if cero=150
+    {
+    room_goto(test1);
+    }
+    if (cero%30)=0 and alpha&gt;0
+    {
+    alpha-=0.02;
+    draw_set_color(c_dkgray);
+    draw_set_alpha(alpha);
+    draw_rectangle(0, 0, 600, 800, false);
+    }
+}
+draw_set_alpha(1);
+draw_rectangle(0, 0, 600, 800, false);
+//
+/*if alpha&gt;0
+{
+alpha-=0.01;
+}
+else room_goto(test1);
+
+draw_set_alpha(alpha);
+
+//draw_set_color_write_enable(50,50,50,alpha);
+draw_rectangle(0, 0, room_width, room_height, false);
+draw_set_alpha(1);*/
 </string>
           </argument>
         </arguments>
@@ -35,23 +91,65 @@ image_speed=0;
     <event eventtype="6" enumb="11">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>542</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_sprite_transform</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>image_index=0;
-image_speed=0;
-</string>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>542</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_transform</functionname>
+        <codestring></codestring>
+        <whoName>game_btn_text</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -59,6 +157,72 @@ image_speed=0;
     <event eventtype="6" enumb="10">
       <action>
         <libid>1</libid>
+        <id>542</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_transform</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>1.2</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1.2</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>542</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_transform</functionname>
+        <codestring></codestring>
+        <whoName>game_btn_text</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>1.2</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1.2</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="0">
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -73,27 +237,38 @@ image_speed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index=1;
-image_speed=0;
+            <string>
+boleano= true;
+
+//alarm[0]=30;
+/*while(alpha&gt;0){
+
+alpha-=0.01;
+}
+
+/*if alpha&gt;0
+{
+alpha-=0.1;
+}
+else room_goto(test1);*/
+
+//room_goto(test1);
+//draw_set_alpha(alpha);
+//draw_rectangle(0, 0, room_width, room_height, false);
+/*if alpha&gt;0
+{
+alpha-=0.01;
+}
+else room_goto(test1);
+
+draw_set_alpha(alpha);
+
+//draw_set_color_write_enable(50,50,50,alpha);
+draw_rectangle(0, 0, room_width, room_height, false);
+draw_set_alpha(1);*/
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

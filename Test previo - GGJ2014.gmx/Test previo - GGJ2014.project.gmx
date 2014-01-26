@@ -19,7 +19,7 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\game_menu_btn</sprite>
     <sprite>sprites\game_menu_sprite</sprite>
-    <sprite>sprites\game_menu_sprite_iluminado</sprite>
+    <sprite>sprites\game_menu_atlas</sprite>
     <sprite>sprites\game_menu_sprite_iluminado2</sprite>
     <sprite>sprites\game_menu_sprite_negros</sprite>
   </sprites>
@@ -62,6 +62,7 @@
     <object>objects\test4_q4</object>
     <object>objects\test4_q4_click</object>
     <object>objects\game_btn_menu</object>
+    <object>objects\game_btn_text</object>
     <object>objects\game_menu_title</object>
     <object>objects\img_main_screen</object>
   </objects>

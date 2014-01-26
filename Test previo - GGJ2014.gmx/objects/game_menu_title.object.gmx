@@ -53,7 +53,7 @@
         <arguments>
           <argument>
             <kind>12</kind>
-            <font>font_title</font>
+            <font>-100</font>
           </argument>
           <argument>
             <kind>4</kind>
