@@ -18,5 +18,3 @@ else
 {
     global.winner = 'atheist'; //  ateos
 }
-
-show_message(global.winner);
