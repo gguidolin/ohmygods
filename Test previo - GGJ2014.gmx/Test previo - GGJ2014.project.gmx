@@ -62,9 +62,14 @@
     <object>objects\test4_q4</object>
     <object>objects\test4_q4_click</object>
     <object>objects\game_btn_menu</object>
+<<<<<<< HEAD
     <object>objects\game_btn_text</object>
     <object>objects\game_menu_title</object>
+=======
+>>>>>>> 550c84fd0d5930bd90cda6ad52b0d661bfcd9aa0
     <object>objects\img_main_screen</object>
+    <object>objects\img_main_screen_fx_1</object>
+    <object>objects\img_main_screen_fx_2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\game_menu</room>
@@ -72,7 +77,7 @@
     <room>rooms\test2</room>
     <room>rooms\test3</room>
     <room>rooms\test4</room>
-    <room>rooms\room5</room>
+    <room>rooms\instructions</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
